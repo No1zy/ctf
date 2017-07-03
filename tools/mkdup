@@ -4,10 +4,10 @@ MY_PATH="$HOME/ctf/tools"
 
 # ヘルプ出力関数
 usage(){
-	cat << _EOS_
-	Usage:
-	    $(basename $0) [-f] <-f file discriptor> int
-	    $(basename $0) <-h|--help>
+    cat << _EOS_
+    Usage:
+        $(basename $0) [-f] <-f file discriptor> int
+        $(basename $0) <-h|--help>
 _EOS_
 }
 
@@ -17,12 +17,12 @@ OPTS=$(getopt -o "f:h" -l "help" -- "$@")
 [ $? -ne 0 ] && usage >&2 && exit 1
 eval set -- "$OPTS"
 while :; do
-	case "$1" in
-	'-f') DATA=$2; shift 2;;
+    case "$1" in
+    '-f') DATA=$2; shift 2;;
     '--') shift; break;;
     '-h'|'--help')usage; exit 0;;
     *) echo "[error] illegal option" >&2; usage >&2; exit 1;;
-	esac
+    esac
 done
 
 # 必須オプションの確認
