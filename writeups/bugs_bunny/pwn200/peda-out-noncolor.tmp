@@ -1,0 +1,18 @@
+Dump of assembler code for function main:
+   0x08048511 <+0>:	lea    ecx,[esp+0x4]
+   0x08048515 <+4>:	and    esp,0xfffffff0
+   0x08048518 <+7>:	push   DWORD PTR [ecx-0x4]
+   0x0804851b <+10>:	push   ebp
+   0x0804851c <+11>:	mov    ebp,esp
+   0x0804851e <+13>:	push   ecx
+=> 0x0804851f <+14>:	sub    esp,0x4
+   0x08048522 <+17>:	call   0x804849b <init>
+   0x08048527 <+22>:	call   0x80484b8 <HEYy>
+   0x0804852c <+27>:	call   0x80484d6 <lOL>
+   0x08048531 <+32>:	mov    eax,0x0
+   0x08048536 <+37>:	add    esp,0x4
+   0x08048539 <+40>:	pop    ecx
+   0x0804853a <+41>:	pop    ebp
+   0x0804853b <+42>:	lea    esp,[ecx-0x4]
+   0x0804853e <+45>:	ret    
+End of assembler dump.
